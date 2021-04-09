@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+     <head><title>CORREÇÃO CESPE
+
+     </title>
+
+     </head>
+
+     <body>
+     <h1>Nota Líquida Cebraspe.</h1>
+
+     <img src="giphy.gif" alt="" srcset="">
+
+
+       <h2>Funciona apenas para o método de prova da banca Cespe/Cebraspe em que uma errada anula uma certa.
+       
+        <p>Como será calculado: 120-Em branco-2x erros= Nota líquida </p> 
+
+       </h2>
+     <div>
+        <input id="Erradas" type="text" placeholder="Erradas"> 
+        <input id="EmBranco" type="text" placeholder="EmBranco">
+        
+        <button onclick ="calcularnota()" >Calcular</button>
+     </div>
+      
+     <h3>by Daniel Brendon</h3>
+      
+     
+
+     
+     <img src="Concurseiro.gif" alt="">
+
+
+
+     </body>
+
+     <style>
+
+         body{
+          background-color: #1b2845;
+          background-image: linear-gradient(315deg, #1b2845 0%, #274060 74%);
+          
+          text-align: center}
+          
+          img{width: 15%;
+          border-radius: 130px rgb(0, 0, 0)}
+          
+          h1{color: rgb(3, 3, 3);font-size:44px
+          
+          ;font-family:Verdana, Geneva, Tahoma, sans-serif}
+
+          h2{color: ivory ;font-size: 12px}
+
+          button{color: blue; background-color: rgb(255, 255, 255);
+          font-family: Georgia, 'Times New Roman', Times, serif;}
+          
+          
+          input{ width: 100px;
+          height: 20px;
+          border-bottom: black border;}
+
+          h3{text-align:center;font-size: 10px;}
+
+         
+     </style>
+
+     <script>
+       function calcularnota(){
+        let txtErradas = document.getElementById("Erradas")
+        let txtEmBranco = document.getElementById("EmBranco")
+        let EmBranco = Number(txtEmBranco.value)
+        let Erradas= Number(txtErradas.value)
+        
+        
+        let resultado= 120 - 2 * Erradas -  EmBranco
+        alert(resultado)
+        
+       }
+     </script>
